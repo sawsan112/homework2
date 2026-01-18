@@ -1,0 +1,213 @@
+> Yoo:
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>صفحتي | روابط</title>
+  <meta name="description" content="صفحة روابط شخصية" />
+  <style>
+    :root{
+      --bg1:#0b1020; --bg2:#0f1b3a;
+      --card: rgba(255,255,255,.06);
+      --stroke: rgba(255,255,255,.12);
+      --text:#f3f6ff; --muted: rgba(255,255,255,.7);
+      --btn: rgba(255,255,255,.08);
+      --btnHover: rgba(255,255,255,.12);
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% 10%, #4f7cff33, transparent 60%),
+        radial-gradient(900px 500px at 10% 90%, #ff7ad633, transparent 55%),
+        linear-gradient(160deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 14px;
+    }
+    .wrap{
+      width:min(560px, 100%);
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      overflow:hidden;
+    }
+    .top{
+      padding:22px 18px 14px;
+      text-align:center;
+    }
+    .avatar{
+      width:84px; height:84px;
+      border-radius:24px;
+      margin:0 auto 12px;
+      background: linear-gradient(135deg, #6aa6ff, #ff7ad6);
+      display:grid;
+      place-items:center;
+      font-weight:800;
+      font-size:28px;
+      letter-spacing:.5px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    h1{margin:0 0 6px; font-size:22px}
+    .bio{margin:0; color:var(--muted); font-size:14px; line-height:1.7}
+    .links{padding:14px 14px 18px}
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      width:100%;
+      text-decoration:none;
+      color:var(--text);
+      background:var(--btn);
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      padding:14px 14px;
+      margin:10px 0;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .btn:hover{
+      background:var(--btnHover);
+      border-color: rgba(255,255,255,.22);
+      transform: translateY(-2px);
+    }
+    .left{
+      display:flex; align-items:center; gap:10px;
+      font-weight:650;
+    }
+    .icon{
+      width:34px; height:34px;
+      border-radius:12px;
+      display:grid; place-items:center;
+      background: rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.12);
+      flex:0 0 auto;
+    }
+    .hint{color:var(--muted); font-size:12px}
+    .arrow{
+      opacity:.85;
+      font-size:18px;
+      flex:0 0 auto;
+    }
+    .footer{
+      padding:12px 14px 16px;
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+    .small{
+      display:flex; gap:10px; justify-content:center; flex-wrap:wrap;
+      margin-top:8px;
+    }
+    .chip{
+      text-decoration:none;
+      color:var(--muted);
+      border:1px solid rgba(255,255,255,.14);
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+    }
+    .chip:hover{color:var(--text); border-color: rgba(255,255,255,.22)}
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header class="top">
+        <!-- غيّري الحرف/الاسم -->
+        <div class="avatar">S</div>
+        <h1>اسمك هنا</h1>
+        <p class="bio">اكتبي وصف بسيط عنك أو عن مشروعك. مثال: روابط حساباتي + متجري + نماذج/ملفات.</p>
+      </header>
+
+> Yoo:
+<div class="links">
+        <!-- عدّلي الروابط والعناوين -->
+        <a class="btn" href="https://instagram.com" target="_blank" rel="noopener">
+          <span class="left">
+            <span class="icon">📷</span>
+            <span>
+              إنستغرام
+              <div class="hint">تابعيني هنا</div>
+            </span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="btn" href="https://tiktok.com" target="_blank" rel="noopener">
+          <span class="left">
+            <span class="icon">🎵</span>
+            <span>
+              تيك توك
+              <div class="hint">مقاطع يومية</div>
+            </span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="btn" href="https://wa.me/0000000000" target="_blank" rel="noopener">
+          <span class="left">
+            <span class="icon">💬</span>
+            <span>
+              واتساب
+              <div class="hint">للطلبات والاستفسار</div>
+            </span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="btn" href="https://yourstore.com" target="_blank" rel="noopener">
+          <span class="left">
+            <span class="icon">🛒</span>
+            <span>
+              المتجر
+              <div class="hint">تسوق الآن</div>
+            </span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="btn" href="https://drive.google.com" target="_blank" rel="noopener">
+          <span class="left">
+            <span class="icon">📄</span>
+            <span>
+              ملف/سيرة/نماذج
+              <div class="hint">PDF أو Google Drive</div>
+            </span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <!-- روابط صغيرة اختيارية -->
+        <div class="small">
+          <a class="chip" href="mailto:you@example.com">✉️ الإيميل</a>
+          <a class="chip" href="tel:+000000000">📞 اتصال</a>
+          <a class="chip" href="https://maps.google.com" target="_blank" rel="noopener">📍 الموقع</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        © <span id="y"></span> — تصميم بسيط للروابط
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
